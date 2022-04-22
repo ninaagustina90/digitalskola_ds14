@@ -1,10 +1,129 @@
-tetjsdgjsdfdhfkdfsdf
-skdfjisdfsdfsdf
+belajar git dan github
+
+dell@DESKTOP-2MLE9S9 MINGW64 ~/Desktop/digitalskola/Batch 14 (master)
+$ git -- version
+unknown option: --
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+dell@DESKTOP-2MLE9S9 MINGW64 ~/Desktop/digitalskola/Batch 14 (master)
+$ git version
+git version 2.35.3.windows.1
+
+dell@DESKTOP-2MLE9S9 MINGW64 ~/Desktop/digitalskola/Batch 14 (master)
+$ git config --global user.name "nina"
+
+dell@DESKTOP-2MLE9S9 MINGW64 ~/Desktop/digitalskola/Batch 14 (master)
+$ git config --global user.email "ninaagustina015@gmail.com"
+
+dell@DESKTOP-2MLE9S9 MINGW64 ~/Desktop/digitalskola/Batch 14 (master)
+$ git config user.name
+nina
+
+dell@DESKTOP-2MLE9S9 MINGW64 ~/Desktop/digitalskola/Batch 14 (master)
+$ git config user.email
+ninaagustina015@gmail.com
+
+dell@DESKTOP-2MLE9S9 MINGW64 ~/Desktop/digitalskola/Batch 14 (master)
+$ git init
+Initialized empty Git repository in C:/Users/dell/Desktop/digitalskola/Batch 14/.git/
+
+dell@DESKTOP-2MLE9S9 MINGW64 ~/Desktop/digitalskola/Batch 14 (master)
+$ git add .
+
+dell@DESKTOP-2MLE9S9 MINGW64 ~/Desktop/digitalskola/Batch 14 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   test.txt
+
+
+dell@DESKTOP-2MLE9S9 MINGW64 ~/Desktop/digitalskola/Batch 14 (master)
+$ git commit -m "Ini commit pertama yang saya lakukan"
+[master (root-commit) ed6f58a] Ini commit pertama yang saya lakukan
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+dell@DESKTOP-2MLE9S9 MINGW64 ~/Desktop/digitalskola/Batch 14 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+dell@DESKTOP-2MLE9S9 MINGW64 ~/Desktop/digitalskola/Batch 14 (master)
+$ git remote add origin https://github.com/ninaagustina90/digitalskola_ds14.git
+
+dell@DESKTOP-2MLE9S9 MINGW64 ~/Desktop/digitalskola/Batch 14 (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 246 bytes | 246.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ninaagustina90/digitalskola_ds14.git
+ * [new branch]      master -> master
+
+dell@DESKTOP-2MLE9S9 MINGW64 ~/Desktop/digitalskola/Batch 14 (master)
+$ git add .
+
+dell@DESKTOP-2MLE9S9 MINGW64 ~/Desktop/digitalskola/Batch 14 (master)
+$ git commit -m "commit kedua"
+[master a2bbed5] commit kedua
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+dell@DESKTOP-2MLE9S9 MINGW64 ~/Desktop/digitalskola/Batch 14 (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 278 bytes | 278.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ninaagustina90/digitalskola_ds14.git
+   ed6f58a..a2bbed5  master -> master
+
+dell@DESKTOP-2MLE9S9 MINGW64 ~/Desktop/digitalskola/Batch 14 (master)
+$ git add .
+
+dell@DESKTOP-2MLE9S9 MINGW64 ~/Desktop/digitalskola/Batch 14 (master)
+$ git commit -m "ubah jadi angka"
+[master 498bcd6] ubah jadi angka
+ 1 file changed, 3 deletions(-)
+
+dell@DESKTOP-2MLE9S9 MINGW64 ~/Desktop/digitalskola/Batch 14 (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (1/1), done.
+Writing objects: 100% (3/3), 266 bytes | 266.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ninaagustina90/digitalskola_ds14.git
+   a2bbed5..498bcd6  master -> master
+
+dell@DESKTOP-2MLE9S9 MINGW64 ~/Desktop/digitalskola/Batch 14 (master)
+$ git pull origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 689 bytes | 3.00 KiB/s, done.
+From https://github.com/ninaagustina90/digitalskola_ds14
+ * branch            master     -> FETCH_HEAD
+   498bcd6..3b9ed19  master     -> origin/master
+Updating 498bcd6..3b9ed19
+Fast-forward
+ test.txt | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+dell@DESKTOP-2MLE9S9 MINGW64 ~/Desktop/digitalskola/Batch 14 (master)
+$
 
 
 
-dafjsdgkfhgkfhksd
-
-asayasdakjdflad
-
-saya tambahin dikit
