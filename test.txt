@@ -129,3 +129,30 @@ alhamdulillah bisa
 
 tambahin 1 line lagi
 
+coba di terminal vsc
+PS C:\Users\dell\Desktop\digitalskola\Batch 14> git ver
+sion
+git version 2.35.3.windows.1
+PS C:\Users\dell\Desktop\digitalskola\Batch 14> git pul
+l origin master
+From https://github.com/ninaagustina90/digitalskola_ds14
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+PS C:\Users\dell\Desktop\digitalskola\Batch 14> git add
+ .
+PS C:\Users\dell\Desktop\digitalskola\Batch 14> git commit -m "tambah"
+[master e270b69] tambah
+ 1 file changed, 2 insertions(+)
+PS C:\Users\dell\Desktop\digitalskola\Batch 14> git pus
+h origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 285 bytes | 285.00 KiB/s,
+done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1
+local object.
+To https://github.com/ninaagustina90/digitalskola_ds14.git
+   1a3f359..e270b69  master -> master
